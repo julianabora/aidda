@@ -1129,6 +1129,9 @@ header.header-mobile.header-center #logo-center{
 /* section */
 
 
+ 
+
+
 /* ================================================== */
 
 section {
@@ -6743,7 +6746,7 @@ width: 259px;
     border: 40px solid white;
     background: transparent;
     box-sizing: border-box;
-    z-index: 99999;
+    z-index: 2;
     position: relative;
     margin: auto;
     top: 35px;
@@ -6961,6 +6964,7 @@ width: 82px;
 
 .white-label-banner {
   background: url(../images/img-tira.png) no-repeat center;border-radius: 25px;
+  height: 128px;
 }
 .btn-gradient {
   background: linear-gradient(90deg, #31bcd1, #236a94);
@@ -6989,10 +6993,8 @@ width: 82px;
  .bg-white-label-section .btn.btn-gradient{ background-size: cover; background: url(../images/img-tira.png) no-repeat center; font-size: 13px; font-weight: 500 !important;}
 
  
-.white-label-banner {
-  background: linear-gradient(90deg, #236a94 40%, #31bcd1 100%);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
+
+
 .btn-gradient {
   background: linear-gradient(90deg, #31bcd1, #236a94);
   border: none;
@@ -7090,6 +7092,14 @@ width: 82px;
   }
 }
 
+
+.wrapper.groups-3d1 .owl-prev{ position: absolute; top: 12px; left: 0}
+
+.wrapper.groups-3d1 .owl-next{ position: absolute; top: 12px; right: 0}
+
+.wrapper.groups-3d1 .owl-theme .owl-nav [class*=owl-]{ background: transparent; border: none; color: #bfd5de; font-size: 26px;}
+
+
 /* mobile */
 
 @media (max-width: 1200px){
@@ -7147,6 +7157,10 @@ width: 82px;
 
 @media (max-width: 1024px){
 
+  .principais-cases{white-space: normal;}
+
+  .desenv{ font-size: 14px; line-height: 20px;}
+
 .flex-row.g-itens{position: absolute;}
 
 .groups-8, .groups-c, .groups-f, .groups-6 {width: 25%;right: initial;position: relative;bottom: 260px; float: left;}
@@ -7155,17 +7169,25 @@ width: 82px;
 
 .transformamos-at, .oportunidades-es{ font-size: 30px;}
 
- 
+ .social-icons.mt-4{ margin-top: 0 !important;}
 
-.flex-row-3c{height: auto;}
-
-.groups-3b { padding: 24px 20px 55px 20px; }
+ .groups-3b {
+        padding: 90px 20px 55px 20px;
+    }
 
 .principais-cases{ margin-top: 110px;}
 
 .image-40{ width: 330px; height: 93px; background-size: 80% !important; }
 
+.section-transformamos .row{bottom: -50px;}
 
+.flex-row-3c{background-size: cover!important; background: url(../images/background.jpg) no-repeat 100%;}
+
+footer .col-md-5{width: 60%;}
+
+footer .col-md-3.redes{ margin-left: 60%;}
+
+footer .mb-1.txt{width: 70%}
 }
 
 @media (max-width: 991px){
@@ -7203,7 +7225,7 @@ width: 82px;
   #menu-btn {
     display: block;
     position: absolute;
-    top: 25px;
+    top: 35px;
     right: 20px;
     z-index: 2001;
     font-size: 28px;
@@ -7238,15 +7260,19 @@ width: 82px;
     color: #fff;
   }
 
-  header.transparent.clone .de-flex{ padding-top: 0;}
+  header.transparent.clone .de-flex{ padding-top: 0;display: inline-block;}
 
-  header .de-flex>.de-flex-col{ display: inline;}
-
-  header div#logo{ left: 150px; position: absolute;}
+  header .de-flex>.de-flex-col{ display: inline-block;}
+ header .row .col-md-12{flex: none;}
+ 
 
   div#logo img { width: 58px;}
 
-  .de-flex-col .social-icons { margin-right: 55px; }
+  .de-flex-col .social-icons { margin-right: 55px;
+        text-align: right;
+        right: 22px;
+        position: absolute;
+        top: 25%; }
 
   .circle {width: 215px; height: 215px;border: 25px solid white;}
 
@@ -7254,7 +7280,11 @@ width: 82px;
 
  .sec-escala { width: 100%; margin-top: -25px; }
 
- #menu-btn{margin-top: -15px;}
+ #menu-btn{margin-top: -25px;}
+
+ #logo a{margin-left: 0;}
+
+ .section-transformamos .row .i1{ margin-top: 30px;}
 
 
 }
@@ -7314,7 +7344,7 @@ width: 82px;
 }
 
 
-@media (max-width: 547px){
+@media (max-width: 667px){
 
 .desbloquear, .inteligentes {font-size: 40.099998px;}
 
@@ -7332,7 +7362,7 @@ width: 82px;
 
 .groups-12 {padding: 0; padding-bottom: 30px;}
 
-.back-gr2{ margin-top: -25px; padding-bottom: 12px;}
+.back-gr2{ margin-top: -25px; padding-bottom: 61px;}
 
 .sec-escala{ border-radius: 50px;}
 
@@ -7389,7 +7419,7 @@ width: 82px;
 
 .section-transformamos .row{ bottom: -25px;}
 
-.groups-3b {padding: 26px 20px 30px 20px;}
+.groups-3b {padding: 60px 20px 30px 20px;}
 
 
 .facebook{right: 161px; bottom: 2px;}
@@ -7429,6 +7459,23 @@ width: 82px;
 .aidda-logo-placeholder img {width: 225px;}
 
 .align-items-start .row.mb-2 .col-md-2, .align-items-start .row.mb-2 .col-md-3{ width: 45%;float: left;text-align: center;}
+
+.background-d{ margin: 1px 0 0 15px;}
+
+footer .row.mb-4 .col-md-3{ width: 50%; height: 140px;}
+
+.carousel-logo img, footer .col-md-5, footer .mb-1.txt {width: 100%;}
+
+footer .col-md-3.redes{margin-left: 0;}
+
+ .carousel-logo img{margin-left: 25%;}
+ 
+
+.bg-white-label-section .fs-1.fw-bold br{ display: none; }
+
+.wow-ag-ia{ display: contents; }
+
+.flex-row.g-itens {left: 18%;}
 
 }
 
