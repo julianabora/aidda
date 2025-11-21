@@ -7464,11 +7464,11 @@ footer .mb-1.txt{width: 70%}
 
 footer .row.mb-4 .col-md-3{ width: 50%; height: 140px;}
 
-.carousel-logo img, footer .col-md-5, footer .mb-1.txt {width: 100%;}
+ footer .col-md-5, footer .mb-1.txt {width: 100%;}
 
 footer .col-md-3.redes{margin-left: 0;}
 
- .carousel-logo img{margin-left: 25%;}
+ .carousel-logo img{margin-left: 0;}
  
 
 .bg-white-label-section .fs-1.fw-bold br{ display: none; }
@@ -7477,9 +7477,18 @@ footer .col-md-3.redes{margin-left: 0;}
 
 .flex-row.g-itens {left: 18%;}
 
+.carousel-logo{margin: auto;}
+
+.bg-white-label-section{ width: 100%; }
+
 }
 
 
 
+@media (max-width: 417px){ 
+  
+  .token-next {right: -7px;}
 
+  .token-prev{left: -7px;}
+}
 
